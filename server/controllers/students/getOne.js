@@ -1,4 +1,4 @@
-const db = require("../../utils/pg");
+const db = require("../../utils/db");
 const BadRequestError = require("../../errors/BadRequestError");
 const { StatusCodes } = require("http-status-codes");
 
