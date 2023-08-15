@@ -10,7 +10,9 @@ const {
   deleteMany,
 } = require("../controllers/students");
 
-router.route("/").get(getOne).put(updateOne).post(insertOne).delete(deleteOne);
+router.route("/").get(getOne).post(insertOne);
+router.route("/:id").put(updateOne).delete(deleteOne);
+
 router.route("/all").get(getAll);
 router.route("/many").post(insertMany).put(updateMany).delete(deleteMany);
 
